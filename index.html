@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+		<meta name="description" content="">
+		<meta name="keywords" content="">
+		<meta name="author" content="">
+		<meta name="twitter:title" content="">
+		<meta name="twitter:card" content="summary_large_image">
+		<meta name="twitter:site" content="">
+		<meta name="twitter:author" content="">
+		<meta name="twitter:description" content="">
+		<meta name="twitter:image" content="">
+		<meta name="twitter:creator" content="">
+		<meta property="og:title" content="">
+		<meta property="og:url" content="">
+		<meta property="og:image" content="">
+		<meta property="og:description" content="">
+		<meta property="og:site_name" content="">
+		<meta property="og:type" content="website">
+		<title>New Tab</title>
+		<link href="css/styles.css" rel="stylesheet">
+  	<!-- <script src="dist/js/script.js"></script> -->
+    <script src="src/js/helper.js"></script>
+    <script src="src/js/tabagotchi.js"></script>
+	</head>
+	<body id="tabagotchi">
+    <!-- header -->
+    <header>
+      <!-- evolution progress -->
+      <div id="evolution-outer-container">
+        <h3>EVOLVE<span class="tips-container"><a class="tip evolution" href="#"><img src="assets/info-button.png"></a></span></h3>
+        <div id="evolution-container">
+          <ul>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+            <li><div class="evolution-segment off"></div></li>
+          </ul>
+        </div>
+        <p id="evolution-state">0/10</p>
+        <div id="evolution-silhouettes">
+          <ul>
+            <li id="level-0">
+              <p>
+                <img class="on" src="assets/silhouettes/level-0/on.png">
+                <img class="off" src="assets/silhouettes/level-0/off.png">
+              </p>
+            </li>
+            <li id="level-1">
+              <p>
+                <img class="on" src="assets/silhouettes/level-1/on.png">
+                <img class="off" src="assets/silhouettes/level-1/off.png">
+              </p>
+            </li>
+            <li id="level-2">
+              <p>
+                <img class="on" src="assets/silhouettes/level-2/on.png">
+                <img class="off" src="assets/silhouettes/level-2/off.png">
+              </p>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div id="evolution-tip" class="tip-modal">
+        <p>Every hour you spend with 5 or fewer open tabs gets you one bar closer to evolving! <br><br>Once all 10 bars are full, your Tabagotchi will evolve!</p>
+      </div>
+      <!-- hp indicator -->
+      <div id="hp-outer-container">
+        <h3>HEALTH<span class="tips-container"><a class="tip health" href="#"><img src="assets/info-button.png"></a></span></h3>
+        <div id="hp-inner-container">
+          <div id="hp-indicator"></div>
+        </div>
+        <p id="hp-indicator-text">100/100</p>
+      </div>
+      <div id="health-tip" class="tip-modal">
+        <p>For every tab you have open, you lose 4 HP. The less HP your Tabagotchi has, the more upset it will get!</p>
+      </div>
+    </header>
+    <!-- middle -->
+    <div id="middle">
+      <!-- various poop -->
+      <div id="poop-1" class="poop"></div>
+      <div id="poop-2" class="poop"></div>
+      <div id="poop-3" class="poop"></div>
+      <div id="poop-4" class="poop"></div>
+      <div id="poop-5" class="poop"></div>
+      <div id="poop-6" class="poop"></div>
+      <!-- monster -->
+      <div id="monster-container">
+        <div id="monster">
+          <a href="#">
+            <img src="assets/monster-state-1-variant-1.gif">
+          </a>
+        </div>
+        <h2 id="monster-text">Lorem Ipsum</h2>
+        <div class="tabcounter">
+          <h4 id="tab-count">You have 0 tabs open</h4> <span class="tips-container"><a class="tip monster" href="#"><img src="assets/info-button.png"></a></span>
+        </div>
+        
+      </div>
+      <div id="monster-tip"  class="tip-modal">
+        <p>More tabs = unhappy Tabagotchi! Close your tabs to keep everyone happy :)</p>
+      </div>
+    </div>
+    <!-- footer -->
+    <footer>
+      
+      <a href="http://breather.com" class="credits" target="_blank"><img src="assets/credits_pixel.png"></a>
+    </footer>
+    <!-- preloader -->
+    <div id="preloader-container">
+      <div class="loader"></div>
+    </div>
+	</body>
+</html>
